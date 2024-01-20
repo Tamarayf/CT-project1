@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+	
+	
+	  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #f8f8f8;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .container {
+            display: flex;
+            flex: 1;
+            overflow: hidden;
+        }
+
+        .column {
+            flex: 1;
+            background-color: #efe8e0;
+            border: 2px solid #e0e0e0;
+            box-sizing: border-box;
+            cursor: pointer;
+            transition: background-color 1s;
+            overflow: hidden;
+            color: #333;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            margin: 10px; /* Adjust the margin based on your preference */
+        }
+
+        .column.active {
+            background-color: #F5F2ED;
+        }
+
+        .column-content {
+            max-height: 0;
+            overflow-y: auto;
+            transition: max-height 1.5s;
+            padding: 20px;
+            color: #555;
+            font-size: 16px;
+            visibility: hidden;
+            display: block;
+            margin-top: 10px;
+        }
+
+        .column.active .column-content {
+            max-height: 1000px;
+            visibility: visible;
+        }
+
+        .column.active .column-image {
+            display: none;
+        }
+
+        .column:hover {
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.9);
+        }
+
+        .column-image {
+            width: 100%;
+            height: auto;
+        }
+		
+		.title{
+		font-size:24px;
+		background-color:#efe8e0;
+		}
+		
+		@media only screen and (max-width: 768px) {
+    /* Styles for tablets */
+    .column {
+        margin: 5px; 
+    }
+
+    .title {
+        font-size: 18px;
+    }
+
+    .column-content {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+     .column-image {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+
+@media only screen and (max-width: 480px) {
+    .column {
+        margin: 5px; 
+    }
+
+    .title {
+        font-size: 16px;
+    }
+
+    .column-content {
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    .column-image {
+        width: 100%;
+        height: auto;
+    }
+}
+		
+    </style>
+</head>
+
+<body>
+
+   
+<header>
+     <div class="forAll">
+            <h1>CT <sub>Project</sub></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">الصفحة الرئيسية</a></li>
+                    <li class="dropdown">
+                      <button class="dropdown-btn"><b>صفحات</b></button>
+                      <div class="dropdown-content">
+                         <a href="aboutUs.html">تعرّف علينا</a>
+                         <a href="contactus.html">تواصل معنا</a>
+                         <a href="quiz.html">اختبار</a>
+                  
+                         <a href="Multimedia.html">تعدد الوسائط</a>
+                         <a href="research.html">بحث</a>
+                         <a href="Cschedule.html">جدول</a>
+                         <a href="arabic.html">بحث</a>
+                        </div>
+                      </li>
+                      <li><a href="aboutUs.html">تعرّف علينا</a></li>
+                      <li><a href="contactus.html">تواصل معنا</a></li>
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="column" onclick="toggleColumn(1)">
+           <div class="title">بنية الشبكة</div>
+            <img class="column-image" src="images/research1.jpg">
+            <div class="column-content">
+               <strong>بنية الشبكة</strong><br> تُعد بنية الشبكة مجموعة أوسع من العناصر الأساسية التي تعمل بتناغم لتشغيل شبكة تقنية المعلومات وتعتبر جزءًا حيويًا من بنية تقنية معلومات المؤسسة. نظرًا لأن المؤسسة تعتمد على شبكتها التقنية لتشغيل التطبيقات الحيوية وعمليات الأعمال، فإن ضمان أن بنية الشبكة الأساسية موثوقة وآمنة وقوية وقادرة على التوسع يعد أمرًا حيويًا.<br> ماذا تتألف بنية الشبكة من؟<br> يمكن أن تكون بنية الشبكة مزيجًا من الأجهزة وتطبيقات البرمجيات وخدمات الشبكة، بما في ذلك:<br> تتضمن بنية الأجهزة عادةً موجهات، ومفاتيح، ومحابس، ومكررات، وبوابات، وجسور، ومودمات.<br> تشمل بنية البرمجيات أدوات الرصد والإدارة وأنظمة التشغيل.<br> تشمل خدمات الشبكة بروتوكولات الشبكة مثل TCP و UDP وتوجيه عناوين IP.<br> يمكن للمؤسسة توسيع شبكتها التقنية عن طريق التكامل مع خدمات الطرف الثالث من مقدمي خدمات الإدارة أو بناء بنية شبكية هجينة عن طريق دمج البنية الأساسية في المواقع مع خدمات السحابة.
+			  <a href="https://www.solarwinds.com/resources/it-glossary/network-infrastructure">بنية الشبكة</a>
+
+            </div>
+        </div>
+        <div class="column" onclick="toggleColumn(2)">
+          <div class="title">             تاريخ الويب</div>
+			            <img class="column-image" src="images/research2.jpg">
+
+            <div class="column-content">
+                             تيم بيرنرز لي، عالِم بريطاني، اخترع الشبكة العنكبوتية العالمية (WWW) في عام 1989 أثناء عمله في مركز البحوث النووية الأوروبي (CERN). تم تصميم الويب أصلاً لتلبية الطلب على مشاركة المعلومات بشكل آلي بين العلماء في الجامعات والمعاهد في جميع أنحاء العالم. CERN ليس مختبرًا معزولًا، بل هو نقطة تواصل لمجتمع واسع يضم أكثر من 17,000 عالم من أكثر من 100 دولة. على الرغم من أن العلماء يقضون بعض الوقت على موقع CERN، إلا أنهم عادةً ما يعملون في الجامعات والمختبرات الوطنية في بلدانهم. لذا فإن أدوات الاتصال الموثوقة ضرورية. الفكرة الأساسية للويب كانت دمج تقنيات تطور الحواسيب وشبكات البيانات والنصوص الفائقة إلى نظام معلومات عالمي قوي وسهل الاستخدام. كتب تيم بيرنرز لي الاقتراح الأول للويب في مارس 1989 والاقتراح الثاني في مايو 1990. جمع هذا مع مهندس الأنظمة البلجيكي روبرت كايو، وكان ذلك اقتراحًا إداريًا في نوفمبر 1990. حدد هذا المستند المفاهيم الرئيسية وقام بتحديد مصطلحات هامة وراء الويب. وصف المستند "مشروع نصوص فائقة" يُدعى "وورلد وايد ويب" حيث يمكن عرض "شبكة" من "مستندات نصوص فائقة" بواسطة المتصفحين. بحلول نهاية عام 1990، كان تيم بيرنرز لي قد أطلق أول خادم ومتصفح ويب في CERN، مُظهرًا أفكاره. قام بتطوير رمز الخادم الخاص به على حاسوب NeXT. لتجنب إيقاف تشغيله عن طريق الخطأ، كان هناك تسمية مكتوبة يدويًا بالحبر الأحمر على الحاسوب: "هذه الآلة هي خادم. لا تطفئها!!" <a href="https://home.cern/science/computing/birth-web/short-history-web#:~:text=Where%20the%20Web%20was%20born,and%20institutes%20around%20the%20world.">تاريخ الويب</a>
+
+
+            </div>
+        </div>
+        
+  <div class="column" onclick="toggleColumn(3)">
+   <div class="title"> 			إحصائيات الإنترنت - الشرق الأوسط ولبنان</div>
+	            <img class="column-image" src="images/research3.jpg">
+
+    <div class="column-content">
+                       <strong>استخدام الإنترنت في لبنان في عام 2022</strong> كان هناك 6.01 مليون مستخدم للإنترنت في لبنان في يناير 2022. بلغ معدل انتشار الإنترنت في لبنان 89.3 في المئة من إجمالي السكان في بداية عام 2022. ملحوظة: نظرًا للتعديلات الكبيرة في البيانات الأساسية، نأسف لعدم قدرتنا حاليًا على تقديم أرقام حول تغيير مستخدمي الإنترنت على مر الوقت في لبنان. من الناحية التاريخية، تكشف هذه الأرقام عن عدم استخدام 716.9 ألف شخص في لبنان للإنترنت في بداية عام 2022، مما يعني أن 10.7 في المئة من السكان ظلوا بدون اتصال على الإنترنت في بداية العام. ومع ذلك، تستمر قضايا تتعلق بجائحة COVID-19 في التأثير على أبحاث اعتماد الإنترنت، لذا قد تكون الأرقام الفعلية لمستخدمي الإنترنت أعلى مما توحي به هذه الأرقام المنشورة (انظر هنا لمزيد من التفاصيل). بالنسبة لأحدث الرؤى حول اعتماد الإنترنت واستخدامه حول العالم، يُرجى متابعة تقاريرنا الدورية لإحصائيات العالم. سرعات اتصال الإنترنت في لبنان في عام 2022 تشير البيانات المنشورة من قبل Ookla إلى أن مستخدمي الإنترنت في لبنان كانوا يتوقعون سرعات اتصال بالإنترنت التالية في بداية عام 2022: سرعة اتصال الإنترنت المتنقلة الوسيطة عبر شبكات الهاتف المحمول: 21.30 ميجابت في الثانية. سرعة اتصال الإنترنت الثابتة المتوسطة: 7.67 ميجابت في الثانية. تُظهر بيانات Ookla أن سرعة اتصال الإنترنت المتنقلة الوسيطة في لبنان انخفضت بمقدار 9.38 ميجابت في الثانية (-30.6 في المئة) خلال الاثني عشر شهرًا حتى بداية عام 2022. وفي الوقت نفسه، تظهر بيانات Ookla أن سرعات اتصال الإنترنت الثابتة في لبنان زادت بمقدار 2.78 ميجابت في الثانية (+56.9 في المئة) خلال نفس الفترة. إحصائيات وسائل التواصل الاجتماعي للبنان في عام 2022 كان هناك 5.06 مليون مستخدم لوسائل التواصل الاجتماعي في لبنان في يناير 2022. كان عدد مستخدمي وسائل التواصل الاجتماعي في لبنان في بداية عام 2022 يعادل 75.2 في المئة من إجمالي السكان، ولكن من المهم أن نلاحظ أن مستخدمي وسائل التواصل الاجتماعي قد لا يمثلون أفرادًا فريدين (انظر ملاحظاتنا المفصلة حول البيانات لمعرفة السبب). تكشف تحليل Kepios أن مستخدمي وسائل التواصل الاجتماعي في لبنان زادوا بمقدار 690 ألف شخص (+15.8 في المئة) بين عامي 2021 و 2022. <a href="https://datareportal.com/reports/digital-2022-lebanon">إحصائيات الإنترنت - الشرق الأوسط ولبنان</a>
+
+
+    </div>
+</div>
+
+    </div>
+
+    <footer>
+        <div id="footer" style="background-image: url('images/fo.JPEG');">
+            <div class="background-image">
+                <div class="footer-content">
+                    <p class="copyright">&copy; Copyright 2023 CT</p>
+                    <p class="email">Email:<br> tamara.f.youssef@net.usek.edu.lb<br>christelle.s.kiwan@net.usek.edu.lb</p>
+                    <p class="id">ID:<br> 202202006<br>202202468</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+   
+     <script>
+        function toggleColumn(columnNumber) {
+            const columns = document.querySelectorAll('.column');
+
+            columns.forEach((column, index) => {
+                const content = column.querySelector('.column-content');
+                const image = column.querySelector('.column-image');
+
+                if (index + 1 === columnNumber) {
+                    column.classList.toggle('active');
+                    content.style.maxHeight = column.classList.contains('active') ? content.scrollHeight + 'px' : '0';
+                    image.style.display = column.classList.contains('active') ? 'none' : 'block';
+                } else {
+                    column.classList.remove('active');
+                    content.style.maxHeight = '0';
+                    image.style.display = 'block';
+                }
+            });
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Web Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #DACDC3;
+            color: black;
+			font-family:Lucida Console;
+            text-align: center;
+            padding: 1em;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        video {
+            width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        audio {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 16px;
+        }
+
+        .gallery img {
+            width: 230px; 
+            height: 230px; 
+            object-fit: cover; 
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+		
+		section p{
+		font-family:Copperplate;
+		font-size:20px;
+		}
+		
+		 @media screen and (max-width: 768px) {
+            header {
+                padding: 0.5em;
+            }
+
+            section {
+                padding: 10px;
+            }
+
+            .gallery img {
+                width: 100%;
+            }
+        }
+		
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Media Web Page</h1>
+    </header>
+
+    <section>
+        <h2>Video</h2>
+        <video controls>
+       <source src="images/lesson.mp4" type="video/mp4">
+        </video>
+
+
+
+
+
+
+
+
+        <h2>Music</h2>
+		<strong><p>Tamara's favorite song</p></strong>
+		<p>leave a light on-Tom walker<p>
+		        <audio controls>
+
+		  <source src="images/tamara.mpeg" type="audio/mpeg">
+
+ </audio>
+			
+
+   <strong> <p>christelle's favorite song</p></strong>
+	<p>Yellow-coldplay</p>
+<audio controls>
+  <source src="images/christelle.mpeg" type="audio/mpeg">
+</audio>
+
+
+        <h2>Image Gallery</h2>
+        <div class="gallery">
+            <img src="images/1-img.JPG" alt="Image 1">
+            <img src="images/img.JPG" alt="Image 2">
+            <img src="images/img1.JPG" alt="Image 3">
+            <img src="images/img3.jpeg" alt="Image 4">
+			 <img src="images/tamara.PNG" alt="Image 5">
+            <img src="images/christelle.PNG" alt="Image 6">
+        </div>
+    </section>
+
+</body>
+</html>

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+	
+	
+	  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #f8f8f8;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .container {
+            display: flex;
+            flex: 1;
+            overflow: hidden;
+        }
+
+        .column {
+            flex: 1;
+            background-color: #efe8e0;
+            border: 2px solid #e0e0e0;
+            box-sizing: border-box;
+            cursor: pointer;
+            transition: background-color 1s;
+            overflow: hidden;
+            color: #333;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            margin: 10px; /* Adjust the margin based on your preference */
+        }
+
+        .column.active {
+            background-color: #F5F2ED;
+        }
+
+        .column-content {
+            max-height: 0;
+            overflow-y: auto;
+            transition: max-height 1.5s;
+            padding: 20px;
+            color: #555;
+            font-size: 16px;
+            visibility: hidden;
+            display: block;
+            margin-top: 10px;
+        }
+
+        .column.active .column-content {
+            max-height: 1000px;
+            visibility: visible;
+        }
+
+        .column.active .column-image {
+            display: none;
+        }
+
+        .column:hover {
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.9);
+        }
+
+        .column-image {
+            width: 100%;
+            height: auto;
+        }
+		
+		.title{
+		font-size:24px;
+		background-color:#efe8e0;
+		}
+		
+		@media only screen and (max-width: 768px) {
+    /* Styles for tablets */
+    .column {
+        margin: 5px; 
+    }
+
+    .title {
+        font-size: 18px;
+    }
+
+    .column-content {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+     .column-image {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+
+@media only screen and (max-width: 480px) {
+    .column {
+        margin: 5px; 
+    }
+
+    .title {
+        font-size: 16px;
+    }
+
+    .column-content {
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    .column-image {
+        width: 100%;
+        height: auto;
+    }
+}
+		
+    </style>
+</head>
+
+<body>
+
+   
+
+<header>
+     <div class="forAll">
+            <h1>CT <sub>Project</sub></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                      <button class="dropdown-btn"><b>PAGES</b></button>
+                      <div class="dropdown-content">
+                         <a href="aboutUs.html">About us</a>
+                         <a href="contactus.html">Contact us</a>
+                         <a href="index.html">Quizz</a>
+                         
+                         <a href="Multimedia.html">MultiMedia</a>
+                         <a href="research.html">Research</a>
+                         <a href="Cschedule.html">Schedule</a>
+                         <a href="arabic.html">Research in Arabic</a>
+                        </div>
+                      </li>
+                      <li><a href="aboutUs.html">About us</a></li>
+                      <li><a href="contactus.html">Contact us</a></li>
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+        <div class="container">
+        <div class="column" onclick="toggleColumn(1)">
+           <div class="title"> Internet infrastructure</div>
+            <img class="column-image" src="images/research1.jpg">
+            <div class="column-content">
+                <strong>Network Infrastructure</strong><br> Network infrastructure is the broader collection of fundamental components that work cohesively to run an IT network and is a critical part of an organization’s IT infrastructure. Since an organization relies on its IT network to run mission-critical applications and business operations, ensuring the underlying network infrastructure is reliable, safe, robust, and scalable is crucial.<br> What does a network infrastructure consist of?<br> Network infrastructure can be a mix of hardware devices, software applications, and network services, including:<br> Hardware infrastructure typically includes routers, switches, hubs, repeaters, gateways, bridges, and modems.<br> Software infrastructure includes monitoring and management tools and operating systems.<br> Network services include networking protocols such as TCP, UDP, and IP addressing.<br> An organization can extend its IT network by integrating with third-party services from managed service providers (MSPs) or build hybrid network infrastructure by integrating on-premises infrastructure with cloud services.<br> <a href="https://www.solarwinds.com/resources/it-glossary/network-infrastructure">internet infrastructure</a>
+            </div>
+        </div>
+        <div class="column" onclick="toggleColumn(2)">
+          <div class="title">  History of the Web</div>
+			            <img class="column-image" src="images/research2.jpg">
+
+            <div class="column-content">
+                Tim Berners-Lee, a British scientist, invented the World Wide Web (WWW) in 1989, while working at CERN. The Web was originally conceived and developed to meet the demand for automated information-sharing between scientists in universities and institutes around the world. CERN is not an isolated laboratory, but rather the focal point for an extensive community that includes more than 17,000 scientists from over 100 countries. Although they typically spend some time on the CERN site, the scientists usually work at universities and national laboratories in their home countries. Reliable communication tools are therefore essential. The basic idea of the WWW was to merge the evolving technologies of computers, data networks and hypertext into a powerful and easy-to-use global information system. Tim Berners-Lee wrote the first proposal for the World Wide Web in March 1989 and his second proposal in May 1990. Together with Belgian systems engineer Robert Cailliau, this was formalized as a management proposal in November 1990. This outlined the principal concepts and it defined important terms behind the Web. The document described a "hypertext project" called "WorldWideWeb" in which a "web" of "hypertext documents" could be viewed by browsers. By the end of 1990, Tim Berners-Lee had the first Web server and browser up and running at CERN, demonstrating his ideas. He developed the code for his Web server on a NeXT computer. To prevent it being accidentally switched off, the computer had a hand-written label in red ink: "This machine is a server. DO NOT POWER IT DOWN!!" <a href="https://home.cern/science/computing/birth-web/short-history-web#:~:text=Where%20the%20Web%20was%20born,and%20institutes%20around%20the%20world.">history of the web</a>
+            </div>
+        </div>
+        
+  <div class="column" onclick="toggleColumn(3)">
+   <div class="title"> Internet Statistics – Middle East and Lebanon</div>
+	            <img class="column-image" src="images/research3.jpg">
+
+    <div class="column-content">
+        <strong>Internet use in Lebanon in 2022</strong> There were 6.01 million internet users in Lebanon in January 2022. Lebanon’s internet penetration rate stood at 89.3 percent of the total population at the start of 2022. Note: due to significant revisions in the base data, we regret that we’re currently unable to offer figures for the change in internet users over time in Lebanon. For perspective, these user figures reveal that 716.9 thousand people in Lebanon did not use the internet at the start of 2022, meaning that 10.7 percent of the population remained offline at the beginning of the year. However, issues relating to COVID-19 continue to impact research into internet adoption, so actual internet user figures may be higher than these published numbers suggest (see here for further details). For the latest insights into internet adoption and use around the world, follow our regular Global Statshot reports. Internet connection speeds in Lebanon in 2022 Data published by Ookla indicate that internet users in Lebanon could have expected the following internet connection speeds at the start of 2022: Median mobile internet connection speed via cellular networks: 21.30 Mbps. Median fixed internet connection speed: 7.67 Mbps. Ookla’s data reveals that the median mobile internet connection speed in Lebanon decreased by 9.38 Mbps (-30.6 percent) in the twelve months to the start of 2022. Meanwhile, Ookla’s data shows that fixed internet connection speeds in Lebanon increased by 2.78 Mbps (+56.9 percent) during the same period. Social media statistics for Lebanon in 2022 There were 5.06 million social media users in Lebanon in January 2022. The number of social media users in Lebanon at the start of 2022 was equivalent to 75.2 percent of the total population, but it’s important to note that social media users may not represent unique individuals (see our detailed notes on data to learn why). Kepios analysis reveals that social media users in Lebanon increased by 690 thousand (+15.8 percent) between 2021 and 2022.
+        <a href="https://datareportal.com/reports/digital-2022-lebanon">Internet Statistics – Middle East and Lebanon</a>
+    </div>
+</div>
+
+    </div>
+
+    <footer>
+        <div id="footer" style="background-image: url('images/fo.JPEG');">
+            <div class="background-image">
+                <div class="footer-content">
+                    <p class="copyright">&copy; Copyright 2023 CT</p>
+                    <p class="email">Email:<br> tamara.f.youssef@net.usek.edu.lb<br>christelle.s.kiwan@net.usek.edu.lb</p>
+                    <p class="id">ID:<br> 202202006<br>202202468</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+   
+     <script>
+        function toggleColumn(columnNumber) {
+            const columns = document.querySelectorAll('.column');
+
+            columns.forEach((column, index) => {
+                const content = column.querySelector('.column-content');
+                const image = column.querySelector('.column-image');
+
+                if (index + 1 === columnNumber) {
+                    column.classList.toggle('active');
+                    content.style.maxHeight = column.classList.contains('active') ? content.scrollHeight + 'px' : '0';
+                    image.style.display = column.classList.contains('active') ? 'none' : 'block';
+                } else {
+                    column.classList.remove('active');
+                    content.style.maxHeight = '0';
+                    image.style.display = 'block';
+                }
+            });
+        }
+    </script>
+
+</body>
+
+</html>

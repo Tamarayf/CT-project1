@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Final Project CT</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+<!-- <link rel="stylesheet" href="styles.css"> -->
+</head>
+
+
+<style>
+    body{
+    margin: 0;
+    padding: 0;
+}
+
+ header h1{
+    font-family: 'Courgette',cursive;
+    font-size: 60px;
+    margin-left: 10px;
+    float: left;
+    margin-top: 5px;
+ 
+}
+nav {
+    float: right;
+}
+
+nav li  {
+ font-size: 24px;
+  font-family:Arial, Helvetica, sans-serif;
+    float: left;
+    display: inline-block;
+    margin-top: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: block;
+    margin-right: 20px
+}
+
+
+    
+    a:hover {
+        color:#A98669;
+    }
+
+    nav li a {
+    text-decoration: none;
+    color: #000000;
+}
+
+#main-image {
+  
+  height: 750px;
+  padding-top: 60px;
+  background-size: cover;
+  background-position: center;
+
+}
+
+.hello{
+    font-size: 100px;
+    /* margin-left: 230px; */
+   
+   
+    
+}
+h2{
+    font-weight: 300;
+    color: #000000;
+    font-size: 40px;
+     /* margin: 200px 0 260px 580px; */
+     margin-top: 180px;
+     margin-left:750px;
+     /* margin-right:580px ; */
+    text-align:start  ;
+    font-family: 'Courgette',cursive;
+   
+   
+
+ 
+    margin-bottom: 20px; 
+}
+
+.button-1 {
+    display: block;
+    text-align: center;
+    background: #000000;
+    border-radius: 3px;
+    color: #fff;
+    margin-top: 10px;
+    width: 200px;
+    font-size: 30px;
+    line-height: 60px;
+    margin: 0 auto;
+    margin-left: 830px;
+    text-decoration: none;
+}
+a.button-1:hover {
+    background-color:#F4F4F2;
+    color:#A98669;
+}
+
+
+
+
+
+ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    #im1,#im2,#im3 {
+      text-align: center;
+      margin-left: 20px;
+    }
+#im1{
+    margin-top:25px;
+    margin-left: 80px;
+}
+    ul img {
+      /* border-radius: 50%; */
+      width: 250px; /* Adjust the size of the round images */
+      height: 280px;
+      object-fit: cover; /* Ensure the image covers the entire circle */
+    }
+  
+
+   
+
+    #im3{
+        
+    width: 450px;
+    height: auto;
+    margin-top: 25px;
+    margin-left: 35px;;
+    }
+    #im2{
+        margin-top:25px;
+    margin-left: 180px;}
+   
+        .button-21,.button-22,.button-23 {
+    display: block;
+    text-align: center;
+    background: #9A8D83;
+    border-radius: 3px;
+    color: black;
+    width: 200px;
+    line-height: 60px;
+    font-size: 25px;
+    text-decoration: none;
+    margin-bottom: 40px;;
+    box-shadow:#000000;
+}
+.button-21{
+    margin-left: 30px;
+   
+  
+}
+.button-22{
+    margin-left: 30px;
+
+}
+.button-23{
+    margin-left: 130px;
+     margin-top:0 ;
+}
+
+a.button-21:hover {
+    background-color:#F4F4F2;
+    color:#A98669;
+}
+a.button-22:hover {
+    background-color:#F4F4F2;
+    color:#A98669;
+}
+a.button-23:hover {
+    background-color:#F4F4F2;
+    color:#A98669;
+}
+
+
+
+
+
+#secondary-content {
+    padding: 60px 0;
+    text-align: center;
+    background-color: #aa876b;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#secondary-content article:first-child {
+    margin-right: 20px;
+    height: 320px;
+    width: 480px;
+
+}
+
+
+
+
+#secondary-content article .overlay {
+    background: #dacdc3;
+    height: 320px;
+    width: 220px;
+    padding: 20px;
+}
+
+
+
+
+
+#secondary-content article {
+    width: 460px;
+    height: 270px;
+    background-color: #aa876b;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-size: 50%; 
+    margin-left: 150px;;
+    
+}
+
+
+
+		
+
+
+
+
+
+
+
+
+quote{
+    font-family:'Courgette',cursive; 
+    font-size: 18px;
+}
+
+
+article h4 {
+    border-bottom: 1px solid transparent;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+#description{
+    text-align: left;
+    font-size: 18px;
+}
+
+.more-link1,.more-link2 {
+    display: block;
+    color:white;
+    padding: 6px 20px;
+    border-radius: 3px;
+    text-decoration: none;
+    background-color: #9a8e82;
+    width: 120px;
+    line-height: 30px;
+    border: 1px solid transparent;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.more-link1:hover {
+    background-color: #A98669;
+    color: #fff;
+}
+.more-link2:hover {
+    background-color: #A98669;
+    color: #fff;
+}
+
+#footer {
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  
+    color: black; 
+    font-family: Arial, Helvetica, sans-serif; 
+}
+
+.background-image {
+    background-color: rgba(0, 0, 0, 0); 
+    width:200px;
+    display: flex; 
+    align-items: center; 
+padding:10px;
+
+}
+
+.footer-content {
+    display: flex; 
+    justify-content: space-between; 
+    /* width: 80%;  */
+	padding:30px;
+	}
+
+.copyright, .email, .id {
+    
+    font-size: 18px;
+    color:#A2958A;
+}
+.copyright{
+  margin-left: 90px;
+}
+
+.email{
+  margin-left:230px;
+}
+.id{
+  margin-left:300px;
+}
+.dropdown-btn {
+    background-color: #DCD0C6;
+    color: black;
+   
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    color: #333;
+}
+
+.dropdown-content a:hover {
+    background-color: black;
+	color:white;
+    transition:0.5s;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+</style>
+<body>
+    <header>
+     <div class="forAll">
+            <h1>CT <sub>Project</sub></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                   
+                    <li class="dropdown">
+                      <button class="dropdown-btn"><b>PAGES</b></button>
+                      <div class="dropdown-content">
+                         <a href="aboutUs.html">About us</a>
+                         <a href="contactus.html">Contact us</a>
+                         <a href="quiz.html">Quizz</a>
+                         <a href="Multimedia.html">MultiMedia</a>
+                         <a href="research.html">Research</a>
+                         <a href="Cschedule.html">Schedule</a>
+                         <a href="arabic.html">Research in Arabic</a>
+                        </div>
+                      </li>
+					  
+					   <li><a href="aboutUs.html">About us</a></li>
+                    <li><a href="contactus.html">Contact us</a></li>
+
+                </ul>
+            </nav>
+        </div>
+        <div id="hero-image"></div>
+    </header>
+
+    <div id="main-image" style="background-image: url('images/main.JPEG')";>
+        <div class="forAll">
+           <h2><b><span class="hello">Hello!</span></b><br>Are you ready for an epic<br> final project journey!</h2>
+           <!-- Update the link to include the id of the section to scroll to -->
+           <a href="#im1" class="button-1">Get Started</a>
+        </div>
+     </div>
+
+    
+    <ul>
+        <li>
+            <div id="im1">
+          <img src="images/Research.png" alt="Image 1">
+          <a href="research.html" class="button-21">Research</a>
+        </div>
+        </li>
+        <li>
+        <div id="im2">
+          <img src="images/schedule.png" alt="Image 2">
+          <a href="Cschedule.html" class="button-22">Schedule</a>
+        </div>
+        </li>
+        <li>
+            <div id="im3">
+          <img src="images/arabicresearch.png" alt="Image 3">
+          <a href="arabic.html" class="button-23">Arabic Research</a>
+        </div>
+        </li>
+      </ul>
+</div>
+
+
+
+<div id="secondary-content">
+    <div class="wrapper">
+      <article style="background-image: url('images/tamara.jpeg');">
+        <div class="overlay">
+          <h4>Tamara Youssef</h4>
+          <div id="description"><p>Computer science  <br>Student</p></div> 
+          <quote> <p><small>"Technology empowers us to turn dreams into code and aspirations into innovation."</small></p></quote>
+          <a href="CV_tamara.html" class="more-link1">My CV</a>
+        </div>
+      </article>
+  
+      <!-- Correct the structure for Christelle's section -->
+      <article style="background-image: url('images/christelle.jpeg') ;height: 320px;width: 480px;">
+        <div class="overlay">
+          <h4>Christelle Kiwan</h4>
+          <div id="description"><p>Computer science <br> Student</p></div> 
+          <quote><p><small>"Technology is the canvas on which human imagination paints the future"</small></p></quote>
+          <a href="CV_christelle.html" class="more-link2">My CV</a>
+        </div>
+      </article>
+    </div>
+  </div>
+  
+     
+</div>
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var scrollLinks = document.querySelectorAll('a[href^="#"]');
+      
+      for (var i = 0; i < scrollLinks.length; i++) {
+        scrollLinks[i].addEventListener('click', smoothScroll);
+      }
+
+      function smoothScroll(e) {
+        e.preventDefault();
+
+        var targetId = this.getAttribute('href').substring(1);
+        var targetElement = document.getElementById(targetId);
+
+        if (targetElement) {
+          window.scrollTo({
+            top: targetElement.offsetTop,
+            behavior: 'smooth'
+          });
+        }
+      }
+    });
+ </script>
+</body>
+
+
+<footer>
+
+    <div id="footer" style="background-image: url('images/fo.JPEG');height: 200px;">
+      <div class="background-image">
+          <div class="footer-content">
+              <p class="copyright">&copy Copyright 2023 CT</p>
+              <p class="email">Email:<br> tamara.f.youssef@net.usek.edu.lb<br>christelle.s.kiwan@net.usek.edu.lb</p>
+              <p class="id">ID:<br> 202202006<br>202202468</p>
+          </div>
+      </div>
+    </div>
+        </footer>
+    </html>
