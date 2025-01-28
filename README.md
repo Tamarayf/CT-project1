@@ -7,8 +7,7 @@ This collaborative project involves the creation of a website from design and co
 
 ### How to Explore
 
-1. Visit the live website: [CT Project Front End] (http://cetaproject.infinityfreeapp.com/)
-2. Dive into the source code to understand the intricate details of our implementation.(https://github.com/Tamarayf/CT-project1.git)
+Dive into the source code to understand the intricate details of our implementation.(https://github.com/Tamarayf/CT-project1.git)
 
 Feel free to explore and provide feedback. We're excited to share our journey in front-end development with you!
 
